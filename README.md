@@ -1,9 +1,6 @@
 # Discord Giveaways
 
-[![discordBadge](https://img.shields.io/badge/Chat-Click%20here-7289d9?style=for-the-badge&logo=discord)](https://discord.gg/r5mb9r5WXv)
-[![downloadsBadge](https://img.shields.io/npm/dt/discord-giveaways?style=for-the-badge)](https://npmjs.com/discord-giveaways)
-[![versionBadge](https://img.shields.io/npm/v/discord-giveaways?style=for-the-badge)](https://npmjs.com/discord-giveaways)
-[![documentationBadge](https://img.shields.io/badge/Documentation-Click%20here-blue?style=for-the-badge)](https://discord-giveaways.js.org)
+
 
 Discord Giveaways is a powerful [Node.js](https://nodejs.org) module that allows you to easily create giveaways!
 
@@ -349,10 +346,6 @@ Other examples:
 - MongoDB
   - [Mongoose](https://github.com/Androz2091/discord-giveaways/blob/master/examples/custom-databases/mongoose.js)
   - [QuickMongo](https://github.com/Androz2091/discord-giveaways/blob/master/examples/custom-databases/quickmongo.js) ⚠️ Not recommended for high giveaway usage, use the `mongoose` example instead
-- [Enmap](https://github.com/Androz2091/discord-giveaways/blob/master/examples/custom-databases/enmap.js)
-- Replit Database ⚠️ Only usable if your bot is hosted on [Replit](https://replit.com/)
-  - [@replit/database](https://github.com/Androz2091/discord-giveaways/blob/master/examples/custom-databases/replit.js)
-  - [Quick.Replit](https://github.com/Androz2091/discord-giveaways/blob/master/examples/custom-databases/quickreplit.js)
 
 ```js
 const Discord = require('discord.js'),
@@ -366,7 +359,7 @@ const Discord = require('discord.js'),
 const db = require('quick.db');
 if (!Array.isArray(db.get('giveaways'))) db.set('giveaways', []);
 
-const { GiveawaysManager } = require('discord-giveaways');
+const { GiveawaysManager } = require('npg-discord-giveaways');
 const GiveawayManagerWithOwnDatabase = class extends GiveawaysManager {
     // This function is called when the manager needs to get all giveaways which are stored in the database.
     async getAllGiveaways() {
@@ -443,7 +436,7 @@ const Discord = require('discord.js'),
     };
 
 // Extends the GiveawaysManager class and update the refreshStorage method
-const { GiveawaysManager } = require('discord-giveaways');
+const { GiveawaysManager } = require('npm-discord-giveaways');
 const GiveawayManagerWithShardSupport = class extends GiveawaysManager {
     // Refresh storage method is called when the database is updated on one of the shards
     async refreshStorage() {
