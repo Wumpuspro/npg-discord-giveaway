@@ -1,0 +1,42 @@
+{
+  "name": "npg-discord-giveaway",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wumpuspro/npg-discord-giveaway.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wumpuspro/npg-discord-giveaway/issues"
+  },
+  "homepage": "https://github.com/Wumpuspro/npg-discord-giveaway#readme",
+  "keywords": [
+    "discord",
+    "discord.js",
+    "giveaways",
+    "winner",
+    "framework",
+    "bot",
+    "discord-giveaways",
+    "discord giveaways",
+    "giveaway"
+  ],
+  "description": "",
+  "dependencies": {
+    "deepmerge": "^4.2.2",
+    "serialize-javascript": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.4.13",
+    "discord.js": "^13.0.1",
+    "eslint": "^7.32.0",
+    "jsdoc": "^3.6.7",
+    "jsdoc-skyceil": "^2.0.0",
+    "typescript": "^4.3.5"
+  }
+}
